@@ -6,6 +6,7 @@ readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
     "Framework :: AsyncIO",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
@@ -17,9 +18,14 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: Implementation :: CPython",
-    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Topic :: System :: Networking",
     "Typing :: Typed",
+    "Operating System :: OS Independent",
 ]
+keywords = ["taskiq", "tasks", "distributed", "async", "aiopg"]
 authors = [
     {name = "Anfimov Dima", email = "lovesolaristics@gmail.com"}
 ]
