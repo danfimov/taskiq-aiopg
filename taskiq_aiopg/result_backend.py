@@ -86,6 +86,7 @@ class AiopgResultBackend(AsyncResultBackend[_ReturnType]):
             result (TaskiqResult[_ReturnType]):  result of the task.
 
         """
+        dumped_result = self.serializer.dumpb(result)
         async with self._database_pool.acquire() as connection, connection.cursor() as cursor:
             await cursor.execute(
                 queries.INSERT_RESULT_QUERY.format(
@@ -93,7 +94,8 @@ class AiopgResultBackend(AsyncResultBackend[_ReturnType]):
                 ),
                 (
                     task_id,
-                    self.serializer.dumpb(result),
+                    dumped_result,
+                    dumped_result,
                 ),
             )
 

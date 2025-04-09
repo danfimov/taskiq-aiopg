@@ -85,7 +85,8 @@ ignore = [
     "FBT001",
     "FBT002",
 
-    # "INP001",
+    "S101",  # assert usage
+    "S311",  # pseudo-random generators are not suitable for cryptographic purposes
 ]
 "tests/test_linting.py" = [
     "S603",  # subprocess usage
