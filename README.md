@@ -1,14 +1,12 @@
-# taskiq-aiopg
+# taskiq + aiopg
 
-Taskiq-aiopg is a plugin for taskiq that adds a new result backend based on PostgreSQL and [aiopg](https://github.com/aio-libs/aiopg).
+[![Python](https://img.shields.io/badge/python-3.10_|_3.11_|_3.12_|_3.13-blue)](https://www.python.org/)
+[![Linters](https://github.com/danfimov/taskiq-aiopg/actions/workflows/code-check.yml/badge.svg)](https://github.com/danfimov/taskiq-aiopg/actions/workflows/code-check.yml)
+
+
+Plugin for taskiq that adds a new result backend based on PostgreSQL and [aiopg](https://github.com/aio-libs/aiopg).
 
 ## Installation
-
-To use this project you must have installed core taskiq library:
-
-```bash
-pip install taskiq
-```
 
 This project can be installed using pip/poetry/uv (choose your preferred package manager):
 
