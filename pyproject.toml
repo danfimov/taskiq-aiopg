@@ -1,6 +1,6 @@
 [project]
 name = "taskiq-aiopg"
-version = "0.1.0"
+version = "0.2.0"
 description = "Aiopg and PostgreSQL integration for taskiq"
 readme = "README.md"
 classifiers = [
