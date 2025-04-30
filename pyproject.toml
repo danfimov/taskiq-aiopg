@@ -60,8 +60,8 @@ markers = [
 ]
 
 [tool.ruff]
-line-length = 200
-target-version = "py312"
+line-length = 120
+target-version = "py39"
 
 [tool.ruff.lint]
 select = ["ALL"]

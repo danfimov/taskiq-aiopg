@@ -17,7 +17,8 @@ def run_linter(name: str, cmd: list[str], warn_only: bool = False) -> None:
     if process.returncode != 0:
         if err:
             msgs.append(
-                f"{name} exited with code {process.returncode} and has unexpected output on stderr:\n{err.decode().rstrip()}",
+                f"{name} exited with code {process.returncode} "
+                f"and has unexpected output on stderr:\n{err.decode().rstrip()}",
             )
         if out:
             msgs.append(f"{name} found issues:\n{out.decode().rstrip()}")

@@ -1,11 +1,16 @@
+from __future__ import annotations
+
 import typing as tp
 
 from aiopg import Pool, create_pool
 from taskiq import AsyncResultBackend, TaskiqResult
-from taskiq.abc.serializer import TaskiqSerializer
 from taskiq.serializers import PickleSerializer
 
 from taskiq_aiopg import exceptions, queries
+
+
+if tp.TYPE_CHECKING:
+    from taskiq.abc.serializer import TaskiqSerializer
 
 
 _ReturnType = tp.TypeVar("_ReturnType")
