@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: postgres
         name: Set up PostgreSQL
-        uses: ikalnytskyi/action-setup-postgres@v4
+        uses: ikalnytskyi/action-setup-postgres@v7
         with:
           username: postgres
           password: postgres
