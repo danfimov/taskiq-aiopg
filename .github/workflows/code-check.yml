@@ -9,15 +9,15 @@ jobs:
       matrix:
         python-version: [ "3.9", "3.10", "3.11", "3.12", "3.13" ]
       fail-fast: true
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: taskiqaiopg
     steps:
       - uses: actions/checkout@v4
-      - id: postgres
-        name: Set up PostgreSQL
-        uses: ikalnytskyi/action-setup-postgres@v4
-        with:
-          username: postgres
-          password: postgres
-          database: taskiqaiopg
       - id: setup-uv
         uses: astral-sh/setup-uv@v6
         with:
