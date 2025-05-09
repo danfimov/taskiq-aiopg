@@ -27,4 +27,6 @@ jobs:
         if: steps.setup-uv.outputs.cache-hit != 'true'
         run: uv sync --all-extras
       - name: Test
+        env:
+          POSTGRESQL_URL: postgresql://postgres:postgres@postgres:5432/taskiqaiopg
         run: uv run pytest
