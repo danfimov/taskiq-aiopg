@@ -1,10 +1,8 @@
 # taskiq + aiopg
 
-[![Python](https://img.shields.io/badge/python-3.10_|_3.11_|_3.12_|_3.13-blue)](https://www.python.org/)
-[![Linters](https://github.com/danfimov/taskiq-aiopg/actions/workflows/code-check.yml/badge.svg)](https://github.com/danfimov/taskiq-aiopg/actions/workflows/code-check.yml)
-
-
-Plugin for taskiq that adds a new result backend based on PostgreSQL and [aiopg](https://github.com/aio-libs/aiopg).
+> [!IMPORTANT]
+> This library was displaced with more advanced solution. 
+> Please use [taskiq-postgres[aiopg]](https://github.com/danfimov/taskiq-postgres) instead.
 
 ## Installation
 
